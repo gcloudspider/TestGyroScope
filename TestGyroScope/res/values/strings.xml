@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, TestGyroScopeActivity!</string>
+    <string name="app_name">TestGyroScope</string>
+    <string name="gyroscope">陀螺仪的值：</string>
+    <string name="direction">↑</string>
+    <string name="fx">你的方向</string>
+    <string name="help1">机器指向</string>
+    <string name="help2">采集中</string>
+	<string name="exithelp">你确定要退出吗?</string>
+	<string name="ok">确定</string>
+	<string name="cancel">取消</string>
+	
+</resources>

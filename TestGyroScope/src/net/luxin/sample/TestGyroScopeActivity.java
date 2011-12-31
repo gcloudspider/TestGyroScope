@@ -93,28 +93,28 @@ public class TestGyroScopeActivity extends Activity  implements SensorEventListe
     }
     public void onSensorChanged(SensorEvent event) {
 		// TODO Auto-generated method stub
-        int axisX = (int)event.values[0];
-        int axisY = (int)event.values[1];
-        int axisZ = (int)event.values[2];
-        //android.util.Log.e("test", "axisX:" + axisX);
+        int rateZ = (int)event.values[0];
+        int rateX = (int)event.values[1];
+        int rateY = (int)event.values[2];
+        //android.util.Log.e("test", "rateZ:" + rateZ);
 		TextView tv = (TextView)(findViewById(R.id.txtGyroscopeValue));
 		TextView directionText = (TextView)(findViewById(R.id.txtDirection));
-		tv.setText("axisX:"+axisX+"  axisY:"+axisY + "  axisZ:"+axisZ);
-		if(axisX >= 350 || axisX <= 10){
+		tv.setText("rateZ:"+rateZ+"  rateX:"+rateX + "  rateY:"+rateY);
+		if(rateZ >= 350 || rateZ <= 10){
 			directionText.setText("正北");
-		}else if(axisX >= 11 && axisX <=79){
+		}else if(rateZ >= 11 && rateZ <=79){
 			directionText.setText("东北");
-		}else if(axisX >=80 && axisX <=100){
+		}else if(rateZ >=80 && rateZ <=100){
 			directionText.setText("正东");
-		}else if(axisX >=101 && axisX <=169){
+		}else if(rateZ >=101 && rateZ <=169){
 			directionText.setText("东南");
-		}else if(axisX >=170 && axisX <=190){
+		}else if(rateZ >=170 && rateZ <=190){
 			directionText.setText("正南");
-		}else if(axisX >=191 && axisX <=259){
+		}else if(rateZ >=191 && rateZ <=259){
 			directionText.setText("西南");
-		}else if(axisX >=260 && axisX <=280){
+		}else if(rateZ >=260 && rateZ <=280){
 			directionText.setText("正西");
-		}else if(axisX >=281 && axisX <=349){
+		}else if(rateZ >=281 && rateZ <=349){
 			directionText.setText("西北");
 		}
 		directionText.invalidate();
